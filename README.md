@@ -30,7 +30,17 @@ Bu çalışma kapsamında, pandeminin küresel verileri kullanılarak lojistik r
 *Not: Random Forest modelinin %100 başarı göstermesi, veri setindeki özniteliklerin hedef değişkenle olan güçlü korelasyonundan kaynaklanmaktadır.*
 
 ## 🏁 Sonuç ve Yorumlar
-Yapılan analizler sonucunda Random Forest modelinin bu veri seti üzerinde hatasız bir tahmin yaptığı doğrulanmıştır.Confusion Matrix sonuçları, modelin hem hasta hem de sağlıklı vakaları doğru ayırt edebildiğini göstermektedir. Bu tür modeller, sağlık sistemlerinde erken teşhis ve kaynak planlaması için kritik öneme sahiptir.
+Bu projede elde edilen sonuçlar, makine öğrenmesi modellerinin pandemi yönetimi ve sağlık teşhis süreçlerindeki potansiyelini açıkça ortaya koymaktadır. Yapılan analizler sonucunda şu çıkarımlara varılmıştır:
+
+Model Başarısı: * Logistic Regression, doğrusal bir model olmasına rağmen %93.4 gibi oldukça yüksek bir doğruluk oranına ulaşmıştır. Bu durum, veri setindeki temel özelliklerin (enlem, boylam, vaka sayıları) hedef değişkenle güçlü bir korelasyona sahip olduğunu kanıtlamaktadır.
+
+Random Forest modeli ise %100 doğruluk (Accuracy) ile kusursuz bir sınıflandırma yapmıştır. Bu başarının temel sebebi, Random Forest'ın karar ağaçları topluluğu kullanarak verideki karmaşık ve doğrusal olmayan ilişkileri çok daha iyi yakalayabilmesidir.
+
+Vaka Tahmini ve Sağlık Sektöründeki Önemi: * Confusion Matrix (Karmaşıklık Matrisi) sonuçlarına göre, modeller "hasta" ve "sağlıklı" sınıflarını birbirinden keskin bir şekilde ayırabilmektedir. Sağlık sektöründe özellikle False Negative (hasta olan birine sağlıklı denmesi) riskinin düşük olması hayati önem taşır. Bu modeller, kısıtlı kaynakların (hastane yatağı, test kitleri vb.) doğru yönlendirilmesinde karar destek mekanizması olarak kullanılabilir.
+
+Teknik Değerlendirme: * Random Forest'ın %100 başarı göstermesi, veri setinin model tarafından tamamen öğrenildiğini gösterir. Ancak gerçek dünya senaryolarında, modelin daha önce hiç görmediği (farklı varyantlar veya farklı demografik veriler gibi) verilerle de beslenerek "overfitting" (aşırı öğrenme) riskine karşı düzenli olarak test edilmesi önerilir.
+
+Gelecek Çalışmalar: * Modelin başarısını daha da artırmak ve genelleştirmek adına; yaş, cinsiyet ve kronik hastalık geçmişi gibi daha spesifik hasta semptomlarını içeren veri setleri üzerinde de benzer çalışmalar yürütülebilir.
 
 ## 💻 Kodların Nasıl Çalıştırılacağı
 1. Bu repodaki `Covid19_Tahmin_Projesi.ipynb` dosyasını indirin.
@@ -39,4 +49,4 @@ Yapılan analizler sonucunda Random Forest modelinin bu veri seti üzerinde hata
 4. Tüm hücreleri sırasıyla (Run All) çalıştırın.
 
 ---
-**Hazırlayan:** [Büşra Kayapınar]  
+**Hazırlayan:Büşra Kayapınar 
