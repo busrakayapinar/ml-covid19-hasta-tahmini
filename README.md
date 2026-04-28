@@ -17,8 +17,8 @@ Bu çalışma kapsamında, pandeminin küresel verileri kullanılarak lojistik r
 
 ## 🤖 Kullanılan Algoritmaların Mantığı
 Ödev kapsamında aşağıdaki iki farklı algoritma kullanılmıştır:
-- **Logistic Regression (Lojistik Regresyon):** Verilen özelliklere dayanarak bir sonucun olasılığını hesaplayan doğrusal bir sınıflandırma algoritmasıdır.
-- **Random Forest (Rastgele Orman):** Birden fazla karar ağacını bir araya getirerek (ensemble learning) daha güçlü ve kararlı tahminler yapan bir algoritmadır.
+- **Logistic Regression:** Verilen özelliklere dayanarak bir sonucun olasılığını hesaplayan doğrusal bir sınıflandırma algoritmasıdır.
+- **Random Forest:** Birden fazla karar ağacını bir araya getirerek (ensemble learning) daha güçlü ve kararlı tahminler yapan bir algoritmadır.
 
 ## 📈 Model Performans Karşılaştırması
 
@@ -30,7 +30,7 @@ Bu çalışma kapsamında, pandeminin küresel verileri kullanılarak lojistik r
 *Not: Random Forest modelinin %100 başarı göstermesi, veri setindeki özniteliklerin hedef değişkenle olan güçlü korelasyonundan kaynaklanmaktadır.*
 
 ## 🏁 Sonuç ve Yorumlar
-Yapılan analizler sonucunda Random Forest modelinin bu veri seti üzerinde hatasız bir tahmin yaptığı doğrulanmıştır. Karmaşıklık Matrisi (Confusion Matrix) sonuçları, modelin hem hasta hem de sağlıklı vakaları doğru ayırt edebildiğini göstermektedir. Bu tür modeller, sağlık sistemlerinde erken teşhis ve kaynak planlaması için kritik öneme sahiptir.
+Yapılan analizler sonucunda Random Forest modelinin bu veri seti üzerinde hatasız bir tahmin yaptığı doğrulanmıştır.Confusion Matrix sonuçları, modelin hem hasta hem de sağlıklı vakaları doğru ayırt edebildiğini göstermektedir. Bu tür modeller, sağlık sistemlerinde erken teşhis ve kaynak planlaması için kritik öneme sahiptir.
 
 ## 💻 Kodların Nasıl Çalıştırılacağı
 1. Bu repodaki `Covid19_Tahmin_Projesi.ipynb` dosyasını indirin.
@@ -39,5 +39,4 @@ Yapılan analizler sonucunda Random Forest modelinin bu veri seti üzerinde hata
 4. Tüm hücreleri sırasıyla (Run All) çalıştırın.
 
 ---
-**Hazırlayan:** [Adın Soyadın]  
-**Teslim Tarihi:** 20.04.2026
+**Hazırlayan:** [Büşra Kayapınar]  
